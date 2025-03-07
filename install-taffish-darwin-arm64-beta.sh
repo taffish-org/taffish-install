@@ -61,7 +61,7 @@ cd "$temp_dir" || exit 1
 echo "Executing commands inside $temp_dir"
 
 # 在这里执行你想在临时文件夹中运行的命令
-curl -O -# https://taffish.com/download/taffish-darwin-arm64-beta.tar.gz
+curl -L -O -A "Mozilla/5.0" -# https://github.com/taffish-org/taffish-install/releases/download/v1.0.0-beta/taffish-darwin-arm64-beta.tar.gz
 tar -zxvf ./taffish-darwin-arm64-beta.tar.gz
 cd ./taffish-darwin-arm64-beta
 sh install.sh $0 $@
