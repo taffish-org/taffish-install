@@ -1,5 +1,6 @@
 #!/bin/bash
 
+url="https://github.com/taffish-org/taffish-install/blob/main/taffish-ubuntu-amd64-beta.tar.gz"
 # >= 18.04.1-LTS (18.04.1-LTS, 20.04-LTS, 22.04-LTS, 24.04-LTS)
 # 创建一个临时文件夹
 temp_dir=$(mktemp -d)
@@ -19,7 +20,7 @@ cd "$temp_dir" || exit 1
 echo "Executing commands inside $temp_dir"
 
 # 在这里执行你想在临时文件夹中运行的命令
-curl -L -O -A "Mozilla/5.0" -# https://github.com/taffish-org/taffish-install/releases/download/v1.0.0-beta/taffish-ubuntu-amd64-beta.tar.gz
+curl -L -O -A "Mozilla/5.0" -# $url
 tar -zxvf ./taffish-ubuntu-amd64-beta.tar.gz
 cd ./taffish-ubuntu-amd64-beta
 sh install.sh $0 $@
