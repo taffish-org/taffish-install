@@ -16,7 +16,7 @@ check_cmd() {
     which $1 > /dev/null 2>&1
 }
 
-if (ls /opt/homebrew/opt/zstd/lib/libzstd.1.dylib > /dev/null 2>&1)
+if (ls which zstd > /dev/null 2>&1)
 then
     :
 else
