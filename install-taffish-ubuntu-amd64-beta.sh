@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url='https://github.com/taffish-org/taffish-install/releases/download/v1.0.0/taffish-ubuntu-amd64-beta.tar.gz'
+url='https://github.com/taffish-org/taffish-install/releases/download/latest/taffish-ubuntu-amd64-beta.tar.gz'
 
 # >= 18.04.1-LTS (18.04.1-LTS, 20.04-LTS, 22.04-LTS, 24.04-LTS)
 # 创建一个临时文件夹

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url='https://github.com/taffish-org/taffish-install/releases/download/v1.0.0/taffish-darwin-amd64-beta.tar.gz'
+url='https://github.com/taffish-org/taffish-install/releases/download/latest/taffish-darwin-amd64-beta.tar.gz'
 
 # 创建一个临时文件夹
 temp_dir=$(mktemp -d)

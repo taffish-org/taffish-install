@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url='https://github.com/taffish-org/taffish-install/releases/download/v1.0.0/taffish-debian12-amd64-beta.tar.gz'
+url='https://github.com/taffish-org/taffish-install/releases/download/latest/taffish-debian12-amd64-beta.tar.gz'
 
 # 创建一个临时文件夹
 temp_dir=$(mktemp -d)
