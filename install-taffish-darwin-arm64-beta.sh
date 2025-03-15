@@ -16,7 +16,7 @@ check_cmd() {
     which $1 > /dev/null 2>&1
 }
 
-if (ls which zstd > /dev/null 2>&1)
+if (which zstd > /dev/null 2>&1)
 then
     :
 else
@@ -38,20 +38,6 @@ else
             echo "[fail to install and quit]"
             exit 1
         fi
-    fi
-fi
-
-if (which podman > /dev/null 2>&1)
-then
-    :
-else
-    echo "[Warning] Command not found: podman"
-    read -p "> Do you want to use brew to install podman? (y/n): " answer < /dev/tty
-    if [ "$answer" = "y" ] || [ "$answer" = "Y" ]
-    then
-        brew install podman
-    else
-        echo "[Warning] You may need podman/docker to use taffish, you can install it by yourself."
     fi
 fi
 

@@ -41,20 +41,6 @@ else
     fi
 fi
 
-if (which podman > /dev/null 2>&1)
-then
-    :
-else
-    echo "[Warning] Command not found: podman"
-    read -p "> Do you want to use brew to install podman? (y/n): " answer < /dev/tty
-    if [ "$answer" = "y" ] || [ "$answer" = "Y" ]
-    then
-        brew install podman
-    else
-        echo "[Warning] You may need podman/docker to use taffish, you can install it by yourself."
-    fi
-fi
-
 # 使用 trap 命令确保脚本结束时执行清理函数
 trap cleanup EXIT
 
