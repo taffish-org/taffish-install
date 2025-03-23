@@ -52,7 +52,7 @@ echo "Executing commands inside $temp_dir"
 curl -L -O -A "Mozilla/5.0" -# $url
 tar -zxvf ./taffish-darwin-amd64-beta.tar.gz
 cd ./taffish-darwin-amd64-beta
-/bin/bash install.sh $0 $@
+/bin/zsh install.sh $0 $@
 
 echo "Commands executed in $temp_dir"
 
