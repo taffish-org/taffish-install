@@ -23,7 +23,7 @@ echo "Executing commands inside $temp_dir"
 curl -L -O -A "Mozilla/5.0" -# $url
 tar -zxvf ./taffish-debian12-amd64-beta.tar.gz
 cd ./taffish-debian12-amd64-beta
-sh install.sh $0 $@
+/bin/bash install.sh $0 $@
 
 echo "Commands executed in $temp_dir"
 
