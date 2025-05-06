@@ -1,6 +1,7 @@
 #!/bin/bash
 
-url='https://github.com/taffish-org/taffish-install/releases/download/latest/taffish-debian12-amd64-beta.tar.gz'
+os='debian12-amd64'
+url="https://github.com/taffish-org/taffish-install/releases/download/latest/taffish-$os-beta.tar.gz"
 
 # 创建一个临时文件夹
 temp_dir=$(mktemp -d)
@@ -21,8 +22,8 @@ echo "Executing commands inside $temp_dir"
 
 # 在这里执行你想在临时文件夹中运行的命令
 curl -L -O -A "Mozilla/5.0" -# $url
-tar -zxvf ./taffish-debian12-amd64-beta.tar.gz
-cd ./taffish-debian12-amd64-beta
+tar -zxvf ./taffish-$os-beta.tar.gz
+cd ./taffish-$os-beta
 /bin/bash install.sh $0 $@
 
 echo "Commands executed in $temp_dir"
